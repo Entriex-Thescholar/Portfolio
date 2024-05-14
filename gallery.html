@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aphelele - Personal Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <!-- Template Google Fonts -->
+    <link href="../../css.css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="../../css-1.css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="gallery.scss" rel="stylesheet">
+    <!-- Custom CSS for the image gallery -->
+    <link rel="stylesheet" href="gallery.css">
+
+    <!-- Alternate Stylesheets (Exotic Colors) -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css">
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css">
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css">
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css">
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css">
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css">
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css">
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css">
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css">
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css">
+    <!-- End of Alternate Stylesheets -->
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+    
+</head>
+<style>
+
+      html, body {
+            height: 100%; /* Set the height of both <html> and <body> to 100% */
+            overflow-y: scroll; /* Enable vertical scrollbar for the entire page */
+        }
+   * {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+h1 {
+	margin: 1em 0 0 0;
+	text-align: center;
+}
+
+#container {
+	margin: 0 auto;
+	width: 50%;
+    
+}
+
+#accordion input {
+	display: none;
+}
+
+#accordion label {
+	background: #141E46;
+	border-radius: .25em;
+	cursor: pointer;
+	display: block;
+	margin-bottom: .125em;
+	padding: .25em 1em;
+	z-index: 20;
+	color: white; /* Added missing semicolon here */
+}
+
+#accordion label:hover {
+	background: #C70039;
+	color: white; /* Added missing semicolon here */
+}
+
+#accordion input:checked + label {
+	background: #183D3D;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+#accordion article {
+	background: #000;
+	height: 0px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+#accordion article p {
+	padding: 1em;
+	color: white;
+}
+
+#accordion input:checked article {
+}
+
+#accordion input:checked ~ article {
+	border-bottom-left-radius: .25em;
+	border-bottom-right-radius: .25em;
+	height: auto;
+	margin-bottom: .125em;
+}
+
+
+</style>
+<body class="gallery exotic-bg">
+    <!-- Live Style Switcher Starts - demo only -->
+    <!-- Your style switcher code here -->
+    <div id="container">
+		<header>
+			<h1>Welcome to the Personal Gallery and interests page<br> Table of Contents</h1>
+		</header>
+		<section id="accordion">
+            
+			<div>
+				<input type="checkbox" id="check-1" />
+				<label for="check-1">Personal Pictures</label>
+				<article>
+					<p>The images featured in this gallery hold a special place in my heart as they are deeply personal and connected to my family. Each photograph captures a unique moment in time, preserving memories of my journey alongside my beloved brother. Some of these images showcase us as we are now, embracing the present and the bond we share today. Others transport me back to our childhood, reminding me of the innocent and carefree days we spent growing up together. These images are more than just pictures; they are windows into our lives, serving as a beautiful reminder of the moments we've shared and the love that binds us as a family. </p>
+				</article>
+			</div>
+
+			<div>
+				<input type="checkbox" id="check-2" />
+				<label for="check-2">Minds who shaped me</label>
+				<article>
+					<p>This category in the gallery features some of my favorite individuals, spanning across various fields and time periods. These remarkable figures include my favorite artists, writers, philosophers, and a diverse array of personalities who have left an indelible mark on history. Exploring this section allows me to connect with the brilliant minds and creative spirits that have inspired me throughout my life, serving as a constant source of fascination and admiration. These individuals have contributed significantly to the worlds of art, literature, and philosophy, and their legacies continue to influence and shape my own perspectives and passions.</p>
+				</article>
+			</div>
+			<div>
+				<input type="checkbox" id="check-3" />
+				<label for="check-3">Personal Aesthetic</label>
+				<article>
+					<p>Within this category lies my absolute favorite aesthetic: the captivating world of Dark Academia. Immerse yourself in the alluring ambiance of this intellectual and vintage-inspired style, which draws inspiration from classic literature, timeless art, and the pursuit of knowledge. It's a celebration of the romanticism of academia, with its rich history, old libraries, and the profound wisdom of the past. Dark Academia has always resonated deeply with me, and I'm thrilled to share this cherished aesthetic with you through a collection of carefully curated images and visuals that capture its essence.</p>
+				</article>
+			</div>
+            
+		</section>
+  </div>
+
+
+    <!-- Live Style Switcher Ends - demo only -->
+
+    <!-- Header Starts -->
+    <header class="header exotic-header" id="navbar-collapse-toggle">
+        <!-- Fixed Navigation Starts -->
+        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+            <li class="icon-box active">
+                <i class="fa fa-home"></i>
+                <a href="index.html">
+                    <h2>Home</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-user"></i>
+                <a href="about.html">
+                    <h2>About</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-briefcase"></i>
+                <a href="portfolio.html">
+                    <h2>Portfolio</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-envelope-open"></i>
+                <a href="contact.html">
+                    <h2>Contact</h2>
+                </a>
+            </li>
+            <li class="icon-box">
+                <i class="fa fa-comments"></i>
+                <a href="blog.html">
+                    <h2>Blog</h2>
+                </a>
+            </li>
+        </ul>
+        <!-- Fixed Navigation Ends -->
+
+        <!-- Mobile Menu Starts -->
+        <nav role="navigation" class="d-block d-lg-none">
+            <div id="menuToggle">
+                <input type="checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="list-unstyled" id="menu">
+                    <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+                    <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Mobile Menu Ends -->
+    </header>
+    <!-- Header Ends -->
+    <p>
+        <br><br><br>
+    </p>
+
+    <!-- Gallery Section Starts -->
+  <!-- Gallery Section Starts -->
+  <section style="width: 110%;">
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+    <div class="box box-4"></div>
+    <div class="box box-5"></div>
+  </section>
+  <p>
+       <br><br><br>
+  </p>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <!-- ---- ---- Code ---- ---- -->  <ul class="tags">
+        <li class="tag" style="color: green;"><span class="box">Mozart</span></li>
+        <li class="tag" style="color: green;"><span class="box">Linus Tovals</span></li>
+        <li class="tag"style="color: green;"><span class="box">Nikola Tesla</span></li>
+        <li class="tag"style="color: green;"><span class="box">Fridritch Nietzche</span></li>
+        <li class="tag"style="color: green;"><span class="box">Albert Camus</span></li>
+        <li class="tag"style="color: green;"><span class="box">Surf Curse</span></li>
+        <li class="tag"style="color: green;"><span class="box">Modest Mouse</span></li>
+        <li class="tag"style="color: green;"><span class="box">Charlse Bukowski</span></li>
+        <li class="tag"style="color: green;"><span class="box">Philip Mainlander</span></li>
+        <li class="tag"style="color: green;"><span class="box">Dotskievski</span></li>
+        <li class="tag"style="color: green;"><span class="box">Kanye West</span></li>
+        <li class="tag"style="color: green;"><span class="box">MF Doom</span></li>
+        <li class="tag"style="color: green;"><span class="box">Ryan Goosling</span></li>
+        <li class="tag"style="color: green;"><span class="box">Surgey Kalarov</span></li>
+        <li class="tag"style="color: green;"><span class="box">Napolion Bornaparte</span></li>
+        <li class="tag"style="color: green;"><span class="box">David Foster Wallace</span></li>
+        <li class="tag"style="color: green;"><span class="box">Osamu Dazai</span></li>
+      </ul>
+  <p>
+       <br><br><br>
+  </p>
+  
+  <section style="width: 100%;">
+    <div class="box box-6"></div>
+    <div class="box box-7"></div>
+    <div class="box box-8"></div>
+    <div class="box box-9"></div>
+    <div class="box box-10"></div>
+  </section>
+
+    <!-- Gallery Section Ends -->
+
+    <!-- Template JS Files -->
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/styleswitcher.js"></script>
+    <script src="js/preloader.min.js"></script>
+    <script src="js/fm.revealator.jquery.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpGridGallery.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/custom.js"></script>
+<script>
+ class FibonacciSphere {
+  #points;
+
+  get points() {
+    return this.#points;
+  }
+
+  constructor(N) {
+    this.#points = [];
+
+    const goldenAngle = Math.PI * (3 - Math.sqrt(5));
+
+    for (let i = 0; i < N; i++) {
+      const y = 1 - (i / (N - 1)) * 2;
+      const radius = Math.sqrt(1 - y ** 2);
+      const a = goldenAngle * i;
+      const x = Math.cos(a) * radius;
+      const z = Math.sin(a) * radius;
+
+      this.#points.push([x, y, z]);
+    }
+  }
+}
+
+class TagsCloud {
+  #root;
+  #size;
+  #sphere;
+  #tags;
+  #rotationAxis;
+  #rotationAngle;
+  #rotationSpeed;
+  #frameRequestId;
+
+  constructor(root) {
+    this.#root = root;
+    this.#size = this.#root.offsetWidth;
+    this.#tags = root.querySelectorAll('.tag');
+    this.#sphere = new FibonacciSphere(this.#tags.length);
+    this.#rotationAxis = [1, 0, 0];
+    this.#rotationAngle = 0;
+    this.#rotationSpeed = 0;
+
+    this.#updatePositions();
+    this.#initEventListeners();
+    this.#root.classList.add('-loaded');
+  }
+
+  #initEventListeners() {
+    window.addEventListener('resize', this.#updatePositions.bind(this));
+    document.addEventListener('mousemove', this.#onMouseMove.bind(this));
+  }
+
+  #updatePositions() {
+    const sin = Math.sin(this.#rotationAngle);
+    const cos = Math.cos(this.#rotationAngle);
+    const ux = this.#rotationAxis[0];
+    const uy = this.#rotationAxis[1];
+    const uz = this.#rotationAxis[2];
+
+    const rotationMatrix = [
+      [
+        cos + ux ** 2 * (1 - cos),
+        ux * uy * (1 - cos) - uz * sin,
+        ux * uz * (1 - cos) + uy * sin,
+      ],
+      [
+        uy * ux * (1 - cos) + uz * sin,
+        cos + uy ** 2 * (1 - cos),
+        uy * uz * (1 - cos) - ux * sin,
+      ],
+      [
+        uz * ux * (1 - cos) - uy * sin,
+        uz * uy * (1 - cos) + ux * sin,
+        cos + uz ** 2 * (1 - cos),
+      ],
+    ];
+
+    const N = this.#tags.length;
+
+    for (let i = 0; i < N; i++) {
+      const x = this.#sphere.points[i][0];
+      const y = this.#sphere.points[i][1];
+      const z = this.#sphere.points[i][2];
+
+      const transformedX =
+        rotationMatrix[0][0] * x +
+        rotationMatrix[0][1] * y +
+        rotationMatrix[0][2] * z;
+      const transformedY =
+        rotationMatrix[1][0] * x +
+        rotationMatrix[1][1] * y +
+        rotationMatrix[1][2] * z;
+      const transformedZ =
+        rotationMatrix[2][0] * x +
+        rotationMatrix[2][1] * y +
+        rotationMatrix[2][2] * z;
+
+      const translateX = (this.#size * transformedX) / 2;
+      const translateY = (this.#size * transformedY) / 2;
+      const scale = (transformedZ + 2) / 3;
+      const transform = `translateX(${translateX}px) translateY(${translateY}px) scale(${scale})`;
+      const opacity = (transformedZ + 1.5) / 2.5;
+
+      this.#tags[i].style.transform = transform;
+      this.#tags[i].style.opacity = opacity;
+    }
+  }
+
+  #onMouseMove(e) {
+    const rootRect = this.#root.getBoundingClientRect();
+    const deltaX = e.clientX - (rootRect.left + this.#root.offsetWidth / 2);
+    const deltaY = e.clientY - (rootRect.top + this.#root.offsetHeight / 2);
+    const a = Math.atan2(deltaX, deltaY) - Math.PI / 2;
+    const axis = [Math.sin(a), Math.cos(a), 0];
+    const delta = Math.sqrt(deltaX ** 2 + deltaY ** 2);
+    const speed = delta / Math.max(window.innerHeight, window.innerWidth) / 20;
+
+    this.#rotationAxis = axis;
+    this.#rotationSpeed = speed;
+  }
+
+  #update() {
+    this.#rotationAngle += this.#rotationSpeed;
+
+    this.#updatePositions();
+  }
+
+  start() {
+    this.#update();
+
+    this.#frameRequestId = requestAnimationFrame(this.start.bind(this));
+  }
+
+  stop() {
+    cancelAnimationFrame(this.#frameRequestId);
+  }
+}
+
+function main() {
+  {
+    const root = document.querySelector('.tags');
+    const cloud = new TagsCloud(root);
+
+    cloud.start();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  main();
+});
+
+
+</script>
+
+</body>
+
+</html>

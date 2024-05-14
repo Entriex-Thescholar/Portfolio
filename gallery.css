@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    display: grid;
+    place-items: center;
+  }
+  
+  section {
+    --childs: 5;
+    --gap: 10px;
+    background: black;
+    border: 10px solid;
+    width: min(80%, 800px);
+    display: flex;
+    gap: var(--gap);
+  }
+  
+  .box {
+    width: calc((100% / var(--childs)));
+    box-sizing: border-box;
+    height: min(30vmin, 250px);
+    background-color: white;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: width 300ms 50ms ease-in-out;
+  }
+  
+  .box:hover {
+    width: calc((100% / (var(--childs) - 2)));
+  }
+  
+  section:has(.box:hover) .box:not(:hover) {
+    width: calc((100% / (var(--childs) + 1)));
+  }
+  
+  .box-1 {
+    background-image: url(img/Me1.jpg);
+  }
+  
+  .box-2 {
+    background-image: url(img/Brother.jpg);
+  }
+  
+  .box-3 {
+    background-image: url(img/Young-Me.jpg);
+  }
+  
+  .box-4 {
+    background-image: url(img/);
+  }
+  
+  .box-5 {
+    background-image: url(img/Me2.jpg);
+  }
+  .box-6 {
+    background-image: url(img/dark-aesthetic/dark-1.jpg);
+  }
+
+  .box-7 {
+    background-image: url(img/dark-aesthetic/dark-2.jpeg);
+  }
+
+ .box-8 {
+    background-image: url(img/dark-aesthetic/dark-academia-aesthetic-u3n4ixzplsb39lei.jpg);
+  }
+  .box-9 {
+    background-image: url(img/dark-aesthetic/dark-3.jpeg);
+  }
+  .box-10 {
+    background-image: url(img/dark-aesthetic/images.jpeg);
+  }
